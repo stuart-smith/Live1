@@ -1,0 +1,269 @@
+
+html, body, div, section, h1, h2, h4, p  {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;    
+}
+
+.intro {
+    height: 800px;
+	width: 100%;
+	text-transform: uppercase;
+    background-color: #2E2E2E; 
+    margin: 0;
+    padding-top: 7%;
+}
+
+#headshot {
+  display: block;
+  height: 200px;
+  width: 160px;
+  margin: 0 auto;
+  
+}
+
+h1 {
+	top: 8%;	
+   	letter-spacing: 0.5em;
+	font-size: 3.5em;    
+}
+
+h2 {
+    letter-spacing: 0.3em;
+	top: 15%;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 4s;
+}
+
+h3 {
+	letter-spacing: 0.3em;
+    top: 20%;
+	-webkit-animation-delay: 2s;
+    -webkit-animation-duration: 4s;    
+}
+
+h1, h2, h3, .quiver, .arrow {
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+.quiver {
+  top: 25%;
+  display: block;
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 4s;
+}
+
+.arrow {    
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 400;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 4s;
+}
+
+.arrow:hover{
+    color: #fff;
+    text-decoration: none;
+    font-size: 3.0em;
+    top: 3px;    
+}
+
+.arrow2 {
+  display: block;
+  text-align: center;
+  color: #fff;
+  margin: 1%;
+  padding: 0.8%;
+  font-size: 2.0em;
+  font-weight: 400;
+  animation: pulse 1s ease infinite;
+}
+
+#section1, #section3, #section5, #section7 {
+  height: 300px;
+  padding: 0;
+  margin: 0; 
+  background-image: url("../images/home-office-336373_1280.jpg");
+  background-size: 125% 150%;
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  -webkit-filter: grayscale(85%); 
+  filter: grayscale(90%);  
+}
+
+#section2, #section4, #section6 {
+  background-color: #2E2E2E; 
+  position: relative;
+  height: 300px;
+  padding-top: 3.0%;
+  margin: 0;  
+}
+
+.about {
+  top: 15%;
+  margin-bottom: 1%;
+  padding: 1%;
+}
+
+.blurb {
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 1%;
+  margin: 1% auto;
+}
+
+.city, .city:hover, .city:visited {
+  color: #96D1E8;
+  text-decoration: none;
+}
+
+#navlist {
+  margin-top: 1%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#navlist li{
+  display: inline;
+  list-style-type: none;    
+  text-decoration: none;  
+}
+
+.social {
+  color: #fff;
+  letter-spacing: 1.3em; 
+}
+
+.social:hover{
+  color: #fff;
+  transform: scale(1.2);
+  transition: transform 0.4s ease-in 0s;
+}
+
+.fa-envelope-o:hover {
+  color: #ca3f3e;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.fa-github:hover{
+  color: #000;
+}
+
+#ending {
+  letter-spacing: inherit;
+  color: #fff;
+  text-align: center;
+  margin-top: 1%;
+}
+
+
+/**********  Pulse Keyframes  **************/
+
+@-webkit-keyframes pulse {
+  
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/**********  Greyscale CSS Start **************/
+
+/*! Gray v1.4.2 (https://github.com/karlhorky/gray) | MIT */
+.grayscale {
+  /* Firefox 10-34 */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='saturate' values='0'/></filter></svg>#grayscale");
+
+  /*
+    Chrome 19+,
+    Safari 6+,
+    Safari 6+ iOS,
+    Opera 15+
+  */
+  -webkit-filter: grayscale(1);
+
+  /* Firefox 35+ */
+  filter: grayscale(1);
+
+  /* IE 6-9 */
+  filter: gray;
+}
+
+.grayscale.grayscale-fade {
+  transition: filter .5s;
+}
+
+/* Webkit hack until filter is unprefixed */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .grayscale.grayscale-fade {
+    -webkit-transition: -webkit-filter .5s;
+    transition:         -webkit-filter .5s;
+  }
+}
+
+.grayscale.grayscale-off,
+.grayscale.grayscale-fade:hover {
+  -webkit-filter: grayscale(0);
+  filter:         grayscale(0);
+}
+
+/* Background element */
+.grayscale.grayscale-replaced {
+  -webkit-filter: none;
+  filter:         none;
+}
+
+.grayscale.grayscale-replaced > svg {
+  -webkit-transition: opacity .5s ease;
+  transition:         opacity .5s ease;
+  opacity: 1;
+}
+
+.grayscale.grayscale-replaced.grayscale-off > svg,
+.grayscale.grayscale-replaced.grayscale-fade:hover > svg {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
