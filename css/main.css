@@ -157,6 +157,10 @@ h1, h2, h3, .quiver, .arrow {
   color: #000;
 }
 
+.fa-twitter:hover {
+  color: #55acee;
+}
+
 #ending {
   letter-spacing: inherit;
   color: #fff;
