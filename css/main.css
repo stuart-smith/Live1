@@ -108,6 +108,10 @@ h1, h2, h3, .quiver, .arrow {
   padding: 1%;
 }
 
+.sizeup {
+  font-size: 1.5em;
+}
+
 .blurb {
   color: #fff;
   letter-spacing: 0.1em;
@@ -117,7 +121,7 @@ h1, h2, h3, .quiver, .arrow {
   margin: 1% auto;
 }
 
-.city, .city:hover, .city:visited {
+.city:link, .city:visited, .city:focus, .city:hover, .city:active   {
   color: #96D1E8;
   text-decoration: none;
 }
@@ -169,37 +173,6 @@ h1, h2, h3, .quiver, .arrow {
 }
 
 
-/**********  Pulse Keyframes  **************/
-
-@-webkit-keyframes pulse {
-  
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 
 /**********  Greyscale CSS Start **************/
 
