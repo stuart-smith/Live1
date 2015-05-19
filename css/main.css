@@ -2,7 +2,8 @@
 html, body, div, section, h1, h2, h4, p  {
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;    
+	font-family: 'Open Sans', sans-serif; 
+    box-sizing: border-box;
 }
 
 .intro {
@@ -87,7 +88,7 @@ h1, h2, h3, .quiver, .arrow {
   padding: 0;
   margin: 0; 
   background-image: url("../images/home-office-336373_1280.jpg");
-  background-size: 125% 150%;
+  background-size: cover;
   background-repeat: no-repeat; 
   background-attachment: fixed; 
   -webkit-filter: grayscale(85%); 
@@ -99,6 +100,7 @@ h1, h2, h3, .quiver, .arrow {
   position: relative;
   height: 300px;
   padding-top: 3.0%;
+  padding-bottom: 0;
   margin: 0;  
 }
 
@@ -173,6 +175,30 @@ h1, h2, h3, .quiver, .arrow {
 }
 
 
+/**********  Media Queries Start **************/
+
+@media (min-width: 300px) and (max-width: 480px){ 
+  #section1, #section3, #section5, #section7 {  
+    background-image: url("../images/home-office-sm.jpg");
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    -webkit-filter: grayscale(85%); 
+    filter: grayscale(90%);  
+}
+  #section2, #section4, #section6{
+    height: 350px;
+    
+  }
+  
+  #navlist {
+    margin-top: 20px;
+    ;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+  
+}
 
 /**********  Greyscale CSS Start **************/
 
