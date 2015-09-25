@@ -4,20 +4,19 @@
   
 	<head>
       
-	<title>Stuart Smith</title>
+	  <title>Stuart Smith</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- Controls viewport size and default zoom  -->
       <meta charset="UTF-8">  <!-- Adding unicode character encoding-->
       <meta name="description" content="My personal website">
-      <meta name="keywords" content="web developer, designer, HTML5, CSS3, JavaScript , Bootstrap, jQuery, GitHub, R">
+      <meta name="keywords" content="web developer, designer, HTML5, CSS3, JavaScript , Bootstrap, jQuery, GitHub">
       <meta name="author" content="Stuart Smith">
       
-      <!-- Adding CDN linked stylesheets -->
+      <!-- Adding CDN links -->
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
       <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" >
+      
       
       <!-- Adding local external stylesheets -->
-      <link rel="stylesheet" type="text/css" href="css/animate.min.css">
       <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
       <link rel="stylesheet" type="text/css" href="css/normalize.css">
       <link rel="stylesheet" type="text/css" href="css/main.css">				
@@ -27,14 +26,13 @@
 	<body>
       
       <div class="intro"> <!-- Start intro  -->
-        <img src="images/HeadShot2.jpg" alt="photo of stuart smith" id="headshot" class="grayscale">
-        <h1 class="animated fadeInDown">hello, i'm stuart</h1>
-        <h2 class="lead animated fadeInDown">an aspiring web developer</h2>
-        <h3 class="lead animated fadeInDown">welcome aboard</h3>
-        <div class="quiver col-md-2 col-md-offset-5 animated fadeInDown">  <!-- Start quiver  -->
-          
+        <img src="images/HeadShot2.jpg" alt="photo of stuart smith" class="grayscale" id="headshot" >
+        <h1 class="lead">hello, i'm stuart</h1>
+        <h2 class="lead">aspiring web developer</h2>
+        <h3 class="lead">welcome aboard</h3>
+        <div class="quiver" id="quiver1">  <!-- Start quiver  -->          
           <br>
-          <a href="#section1" class="arrow glyphicon glyphicon-menu-down animated fadeInDown"></a>
+          <a href="#section2" class="arrow glyphicon glyphicon-menu-down" id="arrow1"></a>
         </div>  <!-- End quiver  -->
       </div>    <!-- End intro  -->    
 
@@ -42,44 +40,61 @@
 
       </div>
 
-      <div id="section2" class="section"> <!-- Start first about me  -->
-        <section>
+      <section id="section2" class="section"> <!-- Start first about me  -->
+        
           <h2 class="about">A little about me <span class="sizeup">. . .</span></h2>
-          <h3 class="container blurb">My name is Stuart Smith. I am a web enthusiast who lives in the beautiful city of <a href="https://www.flickr.com/photos/ottawatourism/albums/72157626912980657" class="city">Ottawa</a>. I develop for the front-end and I play with designs. I love learning new things. In fact, I consider myself a life-long learner, and web technologies are constantly changing, so they are a perfect fit for me. </h3>
-        </section>
-      </div>  <!-- End first about me  -->
+          <p class="container blurb">My name is Stuart Smith. I am a web enthusiast who lives in Canada's beautiful national capital, <a href="https://www.flickr.com/photos/ottawatourism/albums/72157626912980657" class="city">Ottawa</a>. I'm a front-end developer and life-long learner. Web technology is constantly changing, so it's a perfect fit for me. </p>
+					
+					<!-- Start quiver  -->
+					<div class="quiver">           
+						<br>
+						<a href="#section4" class="arrow glyphicon glyphicon-menu-down"></a>
+					</div>  <!-- End quiver  -->
+   
+				
+      </section>  <!-- End first about me  -->
 
       <!-- Buffer -->
-      <div id="section3" class="grayscale section">
+       
+      <div id="section3" class="grayscale section"></div>
 
-      </div>
-
-      <div id="section4" class="section"> <!-- Start second about me  -->
-        <section>
-            <h2 class="about">How I approach my work <span class="sizeup">. . .</span></h2>
-            <h3 class="container blurb">It's not just about optimizing the code, or improving the design. It's about the user, the person interacting with the site. I keep them in mind, always trying to see and experience things from their perspective. I want to build things they understand intuitively. </h3>
-          </section>          
-      </div>  <!-- End second about me  -->   
-      
+      <section id="section4" class="section"> <!-- Start second about me  -->
+        <h2 class="about">How I approach my work <span class="sizeup">. . .</span></h2>
+        <p class="container blurb">It's more than just optimizing code, or improving design. I approach my work focusing on the user. I want to build web experiences that users can enjoy and understand intuitively. </p>
+         <div class="quiver">  <!-- Start quiver  -->          
+             <br>
+             <a href="#section6" class="arrow glyphicon glyphicon-menu-down"></a>
+         </div>  <!-- End quiver  -->		
+       </section>  <!-- End second about me  -->   
+         
       <!-- Buffer -->
+			
       <div id="section5" class="grayscale section"></div>
       
-      <div id="section6" class="section"> <!-- Start third about me  -->
-        <section>
-          <h2 class="about">I work with <span class="sizeup">. . .</span></h2>
-          <h3 class="container blurb">HTML, CSS, JavaScript, jQuery, Bootstrap, and more.</h3><h4 id="ending">I'd love to hear from you.</h4>
+      <section id="section6" class="section"> <!-- Start third about me  -->
+          <h2 class="about">My tools <span class="sizeup">. . .</span></h2>
+          <p class="blurb">HTML, CSS, JavaScript, jQuery, and Bootstrap <br><br> I'd like to hear from you.</p>            
           <ul id="navlist"> <!-- Start social navlist  -->
-            <li><a href="mailto:smith.stuart.n@gmail.com"><i class="fa  fa-envelope-o fa-2x social"></i></a></li>
+            <li><a href="mailto:smith.stuart.n@gmail.com"><span class="fa  fa-envelope-o fa-2x social"></span></a></li>
             <li><a href="https://ca.linkedin.com/in/stuartnsmith"><i class="fa fa-linkedin fa-2x social"></i></a></li>
             <li><a href="https://github.com/stuart-smith"><i class="fa fa-github fa-2x social"></i></a></li>
             <li><a href="https://twitter.com/_snsmith"><i class="fa fa-twitter fa-2x social"></i></a></li>
           </ul> <!-- End social navlist  -->             
-        </section>
-      </div>  <!-- End third about me  -->
+        </section><!-- End third about me  -->
       
       <!-- Buffer -->
+       
       <div id="section7" class="grayscale section"></div>      
-      
+  
+		<script src = "js/jquery-1.11.1.min.js"></script>
+		<script>
+		$(function(){
+		  $('.quiver').hover(function(){
+             $(this).find('.arrow').toggle();
+			});		
+		});
+		</script>
+		
 	</body>
 
 </html>
