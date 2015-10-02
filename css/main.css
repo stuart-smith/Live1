@@ -1,51 +1,51 @@
 
 html, body, div, section, h1, h2, h3, p  {
-	margin: 0;
-	padding: 0;
-	font-family: 'Open Sans', sans-serif; 
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; 
+  box-sizing: border-box;
    
 }
 
 .intro {
-   height: 800px;
-   width: 100%;
-   text-transform: uppercase;
-   background-color: #2E2E2E; 
-   margin: 0;
-   padding-top: 7%;
+  height: 800px;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: #2E2E2E; 
+  margin: 0;
+  padding-top: 7%;
 }
 
 #headshot {
-   display: block;
-   height: 200px;
-   width: 160px;
-   margin: 0 auto;  
+  display: block;
+  height: 200px;
+  width: 160px;
+  margin: 0 auto;  
 }
 
 h1, h2, h3, .quiver, .arrow {
-   position: relative;
-   color: #fff;
-   text-align: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
 }
 
 h1 {
-	top: 8%;	
-   	letter-spacing: 0.5em;
+  top: 8%;	
+  letter-spacing: 0.5em;
 }
 
 h2 {
-   top: 15%;
-   letter-spacing: 0.3em;
+  top: 15%;
+  letter-spacing: 0.3em;  
 }
 
 h3 {
-   top: 20%;
-   letter-spacing: 0.3em;    
+  top: 20%;
+  letter-spacing: 0.3em;    
 }
 
 .container {
-   width: 70%;
+  width: 80%;
 }
 
 #section1, #section3, #section5, #section7 {
@@ -68,28 +68,28 @@ h3 {
 }
 
 .quiver {
-   top: -5%;
-   width: 100%;
-   height: 25%;  
-   display: block;
+  display: block;
+  top: -5%;
+  width: 100%;
+  height: 25%;  
 }
 
 #quiver1 {
-   top: 25%;
-   height: 25%;
+  top: 25%;
+  height: 25%;
 }
 
 .arrow { 
-   display: none;
-   margin-bottom: 5%;
-   font-size: 2.8em;
-   font-weight: 400;
-   color: #474747;
+  display: none;
+  margin-bottom: 5%;
+  font-size: 2.8em;
+  font-weight: 400;
+  color: #474747;
 }
 
 .arrow:hover{
-   color: #fff;
-   text-decoration: none;      
+  color: #fff;
+  text-decoration: none;      
 }
 
 #arrow1 {
@@ -114,10 +114,10 @@ h3 {
 }
 
 #navlist {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   margin: 0 auto ;  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto ;  
 }
 
 #navlist li{   
@@ -157,35 +157,73 @@ h3 {
 @media (max-width: 480px){ 
    
    .intro {
-    height: 600px;
+     height: 600px;
    }
+   
+   #headshot {
+     height: 150px;
+     width: 120px;   
+   }
+   
+   .section .quiver {
+     height: 15%;
+     top: 0;
+   }
+   
+   .section .arrow {
+     top: -20%;  
+     margin: 0;
+     font-size: 2.0em;
+   }  
    
    #quiver1 {
-    top: 15%;   
+     top: 20%;   
    }
+   
    #arrow1 {
-    top: -5%;
+     top: -5%;
    }
 
-  #section1, #section3, #section5, #section7 {  
-    background-image: url("../images/home-office-sm.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    -webkit-filter: grayscale(85%); 
-    filter: grayscale(90%); 
-  }
+   #section1, #section3, #section5, #section7 {
+     background-image: url("../images/home-office-sm.jpg");
+     background-size: cover;
+     background-repeat: no-repeat; 
+     background-attachment: fixed; 
+     -webkit-filter: grayscale(85%); 
+     filter: grayscale(90%); 
+   }
    
    #section2, #section4, #section6 {
-     height: 520px;
-     text-align: left;
+     height: 270px;
+   }
+   
+   .section h2{
+     top: 5%;
+     letter-spacing: 0.2em;
+     font-size: 1.6em;
+     margin-bottom: 10%;
+   }
+   
+   .container {
+     width: 90%;
    }
    
    .blurb {
+     display: block;
+     top: 25%;
      letter-spacing: 0.1em;
-     text-align: left;
+     text-align: center;
      padding: 1%;
-     margin: 1% auto;
+     margin: 1% auto 0;
+   }
+   
+   #section6 .blurb {
+     margin: 5% auto;
+   }
+   
+   #navlist {
+     margin-top: 5%;
+     top: 10%;
    }
    
 }

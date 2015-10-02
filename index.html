@@ -32,7 +32,7 @@
         <h3 class="lead">welcome aboard</h3>
         <div class="quiver" id="quiver1">  <!-- Start quiver  -->          
           <br>
-          <a href="#section2" class="arrow glyphicon glyphicon-menu-down" id="arrow1"></a>
+          <a href="#section1" class="arrow glyphicon glyphicon-menu-down" id="arrow1"></a>
         </div>  <!-- End quiver  -->
       </div>    <!-- End intro  -->    
 
@@ -42,14 +42,14 @@
 
       <section id="section2" class="section"> <!-- Start first about me  -->
         
-          <h2 class="about">A little about me <span class="sizeup">. . .</span></h2>
-          <p class="container blurb">My name is Stuart Smith. I am a web enthusiast who lives in Canada's beautiful national capital, <a href="https://www.flickr.com/photos/ottawatourism/albums/72157626912980657" class="city">Ottawa</a>. I'm a front-end developer and life-long learner. Web technology is constantly changing, so it's a perfect fit for me. </p>
+          <h2 class="about">About me <span class="sizeup">. . .</span></h2>
+          <div class="container blurb">My name is Stuart Smith. I am a web enthusiast who lives in Canada's beautiful national capital, <a href="https://www.flickr.com/photos/ottawatourism/albums/72157626912980657" class="city">Ottawa</a>. I'm a front-end developer and life-long learner. Web technology is constantly changing, so it's a perfect fit for me. </div>
 					
-					<!-- Start quiver  -->
-					<div class="quiver">           
-						<br>
-						<a href="#section4" class="arrow glyphicon glyphicon-menu-down"></a>
-					</div>  <!-- End quiver  -->
+        <!-- Start quiver  -->
+        <div class="quiver">           
+            <br>
+            <a href="#section3" class="arrow glyphicon glyphicon-menu-down"></a>
+        </div>  <!-- End quiver  -->
    
 				
       </section>  <!-- End first about me  -->
@@ -60,10 +60,10 @@
 
       <section id="section4" class="section"> <!-- Start second about me  -->
         <h2 class="about">How I approach my work <span class="sizeup">. . .</span></h2>
-        <p class="container blurb">It's more than just optimizing code, or improving design. I approach my work focusing on the user. I want to build web experiences that users can enjoy and understand intuitively. </p>
+        <div class="container blurb">It's more than just optimizing code, or improving design. I approach my work focusing on the user. I want to build web experiences that users can enjoy and understand intuitively. </div>
          <div class="quiver">  <!-- Start quiver  -->          
              <br>
-             <a href="#section6" class="arrow glyphicon glyphicon-menu-down"></a>
+             <a href="#section5" class="arrow glyphicon glyphicon-menu-down"></a>
          </div>  <!-- End quiver  -->		
        </section>  <!-- End second about me  -->   
          
@@ -73,7 +73,7 @@
       
       <section id="section6" class="section"> <!-- Start third about me  -->
           <h2 class="about">My tools <span class="sizeup">. . .</span></h2>
-          <p class="blurb">HTML, CSS, JavaScript, jQuery, Bootstrap and more. I'd like to hear from you.</p>            
+          <div class="container blurb">HTML, CSS, JavaScript, jQuery, Bootstrap and more. I'd like to hear from you.</div>            
           <ul id="navlist"> <!-- Start social navlist  -->
             <li><a href="mailto:smith.stuart.n@gmail.com"><span class="fa  fa-envelope-o fa-2x social"></span></a></li>
             <li><a href="https://ca.linkedin.com/in/stuartnsmith"><i class="fa fa-linkedin fa-2x social"></i></a></li>
@@ -89,9 +89,12 @@
 		<script src = "js/jquery-1.11.1.min.js"></script>
 		<script>
 		$(function(){
-		  $('.quiver').hover(function(){
+		  $('#quiver1').hover(function(){
              $(this).find('.arrow').toggle();
-			});		
+			});	
+           $('.section').hover(function(){
+             $(this).find('.arrow').toggle();
+			});	
 		});
 		</script>
 		
